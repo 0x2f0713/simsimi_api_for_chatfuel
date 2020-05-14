@@ -2,7 +2,7 @@
   header('Content-Type: text/html; charset=utf-8');
   $type = $_GET[type];
   $msg  = $_GET[msg];
-  $key = 'YOUR_KEY'; #Key của bạn, thay key vào đây.
+  $key = 'EAAQioH0wYrIBAFU4zoj2Mgh6dHJHiSpfmXHmIXwI2kgtNJeQ31jd8otyXCV5IGPxdQclPjO6HavYRrR19rg1hUK8To21DCU414CeQQR5wOsFUx5dStbivXUKeDAzHGHfXMjXVhp7dJZAZCZAb2UCQrgwHErsQWx4h43TszUngZDZD'; #Key của bạn, thay key vào đây.
   $json = file_get_contents('http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=vi&ft=1.0&text=' . urlencode($msg));
   $text = json_decode($json, true);
   if ($type != 'voice') {
